@@ -32,7 +32,7 @@
                 const result = await res.json();
                 container.innerHTML = `<p><i>(Data Source: ${result.source})</i></p>`; // Tampilkan sumber data (Supabase/Redis)
 
-                result.data.forEach(item => {
+                result.data.forEach(item => {   
                     // Buat elemen item
                     const div = document.createElement('div');
                     div.className = 'katalog-item';
